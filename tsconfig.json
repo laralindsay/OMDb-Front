@@ -54,7 +54,7 @@
       "@services/*": [
         "./src/app/services/*"
       ],
-      // "@api-dragon-front/*": ["./src/api-dragon-front/*"]
+       "@api-omdb-front/*": ["./src/api-omdb-front/*"]
     }
   },
   "angularCompilerOptions": {

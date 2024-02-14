@@ -1,0 +1,13 @@
+@import "../../../assets/styles/theme/variables";
+
+:host {
+  .main-container {
+    transition: background 0.5s;
+    background: rgb(23, 15, 102);
+    background: radial-gradient(
+      circle,
+      rgba(23, 15, 102, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../../assets/styles/theme/variables";
+
+:host {
+  h3 {
+    font-family: "Six Caps", sans-serif;
+    letter-spacing: .3rem;
+  }
+
+  p, h5 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;  }
+}
