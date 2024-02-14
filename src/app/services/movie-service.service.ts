@@ -10,4 +10,12 @@ export class MovieService {
   getMovieSearch(query: any) {
     return this.http.get(`https://www.omdbapi.com/?apikey=f148d159&s=${query}`);
   }
+
+  getMovieByTitle(query: any) {
+    return this.http.get(`https://www.omdbapi.com/?apikey=f148d159&t=${query}`).subscribe((data: any) => {
+
+    });
+  }
+
+
 }

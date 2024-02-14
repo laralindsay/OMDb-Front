@@ -24,8 +24,9 @@ import { SearchParameterService } from '@api-omdb-front/services';
     ButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    InputTextModule
-  ],providers: [SearchParameterService],
+    InputTextModule,
+  ],
+  providers: [SearchParameterService],
   templateUrl: './home-movies.component.html',
   styleUrl: './home-movies.component.scss',
 })
@@ -45,12 +46,22 @@ export class HomeMoviesComponent implements OnInit {
       ),
       map((res: any) => res.Search)
     );
-
   }
 
+  // searchByTitle() {
+  //   this.movies$ = this.searchForm.valueChanges.pipe(
+  //     debounceTime(500),
+  //     distinctUntilChanged(),
+  //     switchMap((titleString) =>
+  //       this.movieService.getMovieByTitle(titleString)
+  //     ),
+  //     map((res: any) => {
+  //       this.movies$ = res
+  //     })
+  //   );
+  // }
 
-  clearForm(){
-    this.searchForm.reset()
+  clearForm() {
+    this.searchForm.reset();
   }
 }
-
