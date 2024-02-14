@@ -1,0 +1,15 @@
+@import "variables";
+@import "../../../../node_modules/bootstrap/scss/functions";
+
+
+:root {
+  --default-theme-primary: #{$color-primary};
+  --default-theme-primary-rgb: #{to-rgb($color-primary)};
+  --default-theme-secondary: #{$color-secondary};
+  --default-theme-secondary-rgb: #{to-rgb($color-secondary)};
+
+  --theme-primary: #{$color-primary};
+  --theme-primary-rgb: #{to-rgb($color-primary)};
+  --theme-secondary: #{$color-secondary};
+  --theme-secondary-rgb: #{to-rgb($color-secondary)};
+}

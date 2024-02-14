@@ -1,0 +1,20 @@
+p-toast {
+  p-toastitem {
+    .p-toast-message {
+      .p-toast-message-content {
+        padding: 0.5rem;
+
+        .p-toast-detail {
+          max-height: 60vh;
+          overflow: hidden;
+          overflow-wrap: anywhere;
+        }
+
+        .p-toast-icon-close {
+          width: 1rem;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

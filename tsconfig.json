@@ -22,7 +22,40 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@app/*": [
+        "./src/app/*"
+      ],
+      "@components/*": [
+        "./src/app/components/*"
+      ],
+      "@containers/*": [
+        "./src/app/containers/*"
+      ],
+      "@environments/*": [
+        "./src/environments/*"
+      ],
+      "@guards/*": [
+        "./src/app/guards/*"
+      ],
+      "@http-services/*": [
+        "./src/app/services/http/*"
+      ],
+      "@layout/*": [
+        "./src/app/layout/*"
+      ],
+      "@modals/*": [
+        "./src/app/modals/*"
+      ],
+      "@pages/*": [
+        "./src/app/pages/*"
+      ],
+      "@services/*": [
+        "./src/app/services/*"
+      ],
+      // "@api-dragon-front/*": ["./src/api-dragon-front/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

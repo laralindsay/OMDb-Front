@@ -1,0 +1,16 @@
+@import "../theme/variables.scss";
+
+$min-contrast-ratio: 1.7;
+
+$theme-colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+
+  "success": $color-success,
+  "info": $color-info,
+  "danger": $color-danger,
+  "warning": $color-warning,
+
+  "light": $color-light,
+  "dark": $color-dark
+);

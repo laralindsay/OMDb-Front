@@ -1,0 +1,20 @@
+@import "../../../assets/styles/theme/variables";
+
+:host {
+  .home-container {
+    width: max-content;
+    transition: background 0.5s;
+    background: rgb(23, 15, 102);
+    background: radial-gradient(
+      circle,
+      rgba(23, 15, 102, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+
+    .title {
+      font-family: "Six Caps", sans-serif;
+      color: $color-light;
+      font-size: 35px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.p-inputtext {
+  &.p-disabled,
+  &.p-component:disabled {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}

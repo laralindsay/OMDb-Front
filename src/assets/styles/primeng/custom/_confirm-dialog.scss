@@ -1,0 +1,15 @@
+p-confirmdialog {
+  .p-dialog {
+    .p-dialog-header {
+      .p-dialog-header-icons {
+        button {
+          color: white;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

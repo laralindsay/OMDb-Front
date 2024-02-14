@@ -1,0 +1,7 @@
+p-carousel  {
+  ::ng-deep {
+    .p-carousel-indicators {
+      display: none !important;
+    }
+  }
+}

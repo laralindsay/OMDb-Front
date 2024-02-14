@@ -1,0 +1,25 @@
+.p-button {
+  text-decoration: none;
+  border-radius: 6px;
+
+  // Fix button disabled color
+  &[disabled] {
+    .p-button-icon {
+      color: #b6bcc3;
+    }
+  }
+
+  // Fix svg loading margin
+  &:not(.p-button-icon-only) {
+    .p-button-icon.p-button-loading-icon {
+      margin-right: 0.25rem;
+    }
+  }
+
+  // Fix svg loading margin
+  .p-button-icon.p-button-loading-icon {
+    svg {
+      vertical-align: revert;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+@import "../theme/variables";
+
+$primaryColor: $color-primary;
+$primaryDarkColor: lighten($color-primary, 10%);
+$primaryDarkerColor: lighten($color-primary, 20%);
+$primaryTextColor: #ffffff;
+
+$colors: (
+  "blue": #2196F3,
+  "green": #4caf50,
+  "yellow": #FBC02D,
+  "cyan": #00BCD4,
+  "pink": #E91E63,
+  "indigo": #3F51B5,
+  "teal": #009688,
+  "orange": #F57C00,
+  "bluegray": #607D8B,
+  "purple": #9C27B0,
+  "red": #FF4032,
+  "primary": $primaryColor
+);
+
+
+// Mandatory Designer Variables
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/general';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/form';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/button';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/panel';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/_data';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/_overlay';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/_message';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/_menu';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/_media';
+@import '../../../../node_modules/primeng-sass-theme/themes/mytheme/variables/_misc';
+
+
+$errorColor: $color-danger;
+$inputErrorBorderColor: $errorColor;
+
+$fontSize: 0.9rem;
+$inputTextFontSize: $fontSize;
+$inputPadding: 0.25rem 0.5rem;
+
+$buttonPadding: 0.25rem 0.5rem;
+$buttonIconOnlyPadding: 0;
+$textButtonHoverBgOpacity: 0.3;
+$focusShadow: none;
+$borderRadius: 6px;
+
+$tableHeaderCellPadding: 0.5rem 0.5rem;
+$tableBodyCellPadding: 0.25rem 0.5rem;
+$tableScaleSM: 0.4;
+
+$calendarHeaderPadding: 0;
+$calendarCellDatePadding: 0.2rem;
+$calendarCellDateWidth: 2rem;
+$calendarCellDateHeight: 2rem;
+
+
+$dialogHeaderBg: $primaryColor;
+$dialogHeaderTextColor: white;
+$dialogHeaderPadding: 1rem;
+$dialogContentPadding: 1.5rem;
+$dialogFooterPadding: 0.5rem;
+$actionIconColor: white;
+
+$secondaryButtonBg: $color-secondary;
+$secondaryButtonBorder: 1px solid $color-secondary;
+$secondaryButtonHoverBg: darken($color-secondary, 10%);
+$secondaryButtonHoverBorderColor: darken($color-secondary, 10%);
+$secondaryButtonActiveBg: darken($color-secondary, 20%);
+$secondaryButtonActiveBorderColor: darken($color-secondary, 20%);
+$secondaryButtonFocusShadow: none;
+
+$warningButtonBg: $color-warning;
+$warningButtonTextColor: white;
+$warningButtonBorder: 1px solid $color-warning;
+$warningButtonHoverBg: lighten($color-warning, 10%);
+$warningButtonTextHoverColor: white;
+$warningButtonHoverBorderColor: lighten($color-warning, 10%);
+$warningButtonActiveBg: lighten($color-warning, 20%);
+$warningButtonTextActiveColor: white;
+$warningButtonActiveBorderColor: lighten($color-warning, 20%);
+$warningButtonFocusShadow: none;
+
+
+$tableHeaderCellBg: #E6E6E6;
+$tableHeaderCellTextColor: #444444;
+$tableHeaderCellHighlightBg: $color-primary;
+$tableHeaderCellHighlightTextColor: #444444;
+
+$tableHeaderCellHoverBg: darken($tableHeaderCellBg, 10%);
+$tableHeaderCellHoverTextColor: white;
+$tableHeaderCellHighlightHoverBg: darken($tableHeaderCellBg, 10%);
+$tableHeaderCellTextHoverColor: white;
+
+$tableHeaderCellIconColor: white;
+$tableHeaderCellIconHoverColor: white;
+
+$tableBodyRowEvenBg: #E6E6E6;
+
+
+$panelHeaderPadding: 0.5rem 1rem;
+$inputListItemPadding: 0.35rem 1rem;
+
+
+$paginatorElementWidth: 2rem;
+$paginatorElementHeight: 2rem;
+
+
+:root {
+  --surface-a: #ffffff;
+  --surface-b: #f8f9fa;
+  --surface-c: #e9ecef;
+  --surface-d: #dee2e6;
+  --surface-e: #ffffff;
+  --surface-f: #ffffff;
+  --text-color: #495057;
+  --text-color-secondary: #6c757d;
+  --primary-color: #{$color-primary};
+  --primary-color-text: #ffffff;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --surface-0: #ffffff;
+  --surface-50: #FAFAFA;
+  --surface-100: #F5F5F5;
+  --surface-200: #EEEEEE;
+  --surface-300: #E0E0E0;
+  --surface-400: #BDBDBD;
+  --surface-500: #9E9E9E;
+  --surface-600: #757575;
+  --surface-700: #616161;
+  --surface-800: #424242;
+  --surface-900: #212121;
+  --content-padding: #{$panelContentPadding};
+  --inline-spacing: #{$inlineSpacing};
+  --border-radius: #{$borderRadius};
+  --surface-ground: #f8f9fa;
+  --surface-section: #ffffff;
+  --surface-card: #ffffff;
+  --surface-overlay: #ffffff;
+  --surface-border: #dee2e6;
+  --surface-hover: #e9ecef;
+  --maskbg: #{$maskBg};
+  --highlight-bg: #{$highlightBg};
+  --highlight-text-color: #{$highlightTextColor};
+  --focus-ring: #{$focusShadow};
+  color-scheme: light;
+  --primary-hover: #{$primaryDarkColor};
+}

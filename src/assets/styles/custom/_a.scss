@@ -1,0 +1,11 @@
+a {
+  &[href] {
+    text-decoration: none;
+
+    &.p-button {
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

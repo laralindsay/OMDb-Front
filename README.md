@@ -1,27 +1,18 @@
-# OmdbFront
+# 🛠️ OmdbFront
+Esta aplicação é destinada para busca de informações de filmes e séries em conexão com OMDb(https://www.omdbapi.com/).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
-## Development server
+## :construction: Projeto em construção :construction:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## ✔️ Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/laralindsay/)
 
-## Build
+[![Angular](https://img.shields.io/badge/Angular-0F0F11?style=for-the-badge&logo=angular&logoColor=white)](https://github.com/laralindsay/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://github.com/laralindsay/)
 
-## Running unit tests
+[![PrimeNG](https://img.shields.io/badge/PrimeNG-6BA539?style=for-the-badge&logo=primeng&logoColor=white)](https://github.com/laralindsay/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,31 @@
+@import "../theme/variables";
+
+control-error {
+  .control-error {
+    width: 100%;
+    font-size: 0.8em;
+    color: $color-danger;
+  }
+}
+
+input {
+  &.ng-invalid.ng-touched {
+    border: 1px solid $color-danger;
+  }
+}
+
+p-password {
+  &.ng-invalid.ng-touched {
+    input {
+      border: 1px solid $color-danger;
+    }
+  }
+}
+
+p-dropdown {
+  &.ng-invalid.ng-touched {
+    .p-dropdown {
+      border: 1px solid $color-danger;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../theme/variables.scss";
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6b6b6b -moz-default-color;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;
+  border-radius: 5px;
+}

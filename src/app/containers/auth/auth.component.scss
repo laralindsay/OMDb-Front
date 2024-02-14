@@ -1,0 +1,43 @@
+@import "../../../assets/styles/theme/variables";
+
+:host {
+  .auth-container {
+    transition: background 0.5s;
+    background: rgb(23, 15, 102);
+    background: radial-gradient(
+      circle,
+      rgba(23, 15, 102, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+
+    .auth-login {
+      font-family: "Six Caps", sans-serif;
+      color: $color-light;
+      font-size: 35px;
+    }
+
+    .bg-purple {
+      width: 860px;
+      border-radius: 0 0 800px 0;
+      background: #be80c2;
+      filter: blur(80px);
+    }
+
+    .bg-blue {
+      width: 860px;
+      border-radius: 800px 0 0 0;
+      background: #384c91;
+      filter: blur(100px);
+    }
+  }
+
+  .auth-content {
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.09);
+    padding: 1em;
+    min-width: 228px;
+    height: 351px;
+    box-shadow: 8px 8px 16px rgb(0 0 0 / 25%);
+    z-index: 10;
+  }
+}

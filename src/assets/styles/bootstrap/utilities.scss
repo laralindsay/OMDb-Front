@@ -1,0 +1,45 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$utilities: map-merge(
+    $utilities, (
+    "width": (
+      property: width,
+      class: w,
+      responsive: true,
+      values: (
+        10: 10%,
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        33: 33%,
+        40: 40%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "cursor": (
+      responsive: true,
+      property: cursor,
+      values: auto default pointer wait text move help not-allowed
+    ),
+    "gap-row": (
+      responsive: true,
+      property: row-gap,
+      class: gapy,
+      values: $spacers
+    ),
+    "gap-column": (
+      responsive: true,
+      property: column-gap,
+      class: gapx,
+      values: $spacers
+    )
+  )
+)
