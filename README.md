@@ -1,4 +1,4 @@
-# 🛠️ OmdbFront
+# 🛠️ OMDb Front
 Esta aplicação é destinada para busca de informações de filmes e séries em conexão com OMDb(https://www.omdbapi.com/).
 
 
