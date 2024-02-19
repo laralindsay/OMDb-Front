@@ -8,13 +8,11 @@ export class MovieService {
   constructor(private http: HttpClient) {}
 
   getMovieSearch(query: any) {
-    return this.http.get(`https://www.omdbapi.com/?apikey=f148d159&s=${query}`);
+    return this.http.get(`https://www.omdbapi.com/?apikey=f148d159&t=${query}`);
   }
 
   getMovieByTitle(query: any) {
-    return this.http.get(`https://www.omdbapi.com/?apikey=f148d159&t=${query}`).subscribe((data: any) => {
-
-    });
+    return this.http.get(`https://www.omdbapi.com/?apikey=f148d159&t=${query}`);
   }
 
 

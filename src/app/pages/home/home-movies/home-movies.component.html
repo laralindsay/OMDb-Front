@@ -23,7 +23,7 @@
 <div class="w-100 text-light pt-5 px-5">
   <div class="row mb-3" *ngFor="let movie of movies$ | async">
     <div class="col-8">
-      <h1>{{ movie.Title }}</h1>
+      <h1>{{ movie.plot }}</h1>
       <h5>{{ movie.Year }}</h5>
       <h5>{{movie.Type}}</h5>
     </div>

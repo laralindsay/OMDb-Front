@@ -10,7 +10,6 @@ import {
 
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { InputTextModule } from 'primeng/inputtext';
 import { MovieService } from '@app/services/movie-service.service';
 import { SearchParameterService } from '@api-omdb-front/services';
@@ -20,7 +19,6 @@ import { SearchParameterService } from '@api-omdb-front/services';
   standalone: true,
   imports: [
     CommonModule,
-    HttpClientModule,
     ButtonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -44,16 +42,16 @@ export class HomeMoviesComponent implements OnInit {
       switchMap((searchString) =>
         this.movieService.getMovieSearch(searchString)
       ),
-      map((res: any) => res.Search)
+      map((res: any) => (this.movies$ = res[0]))
     );
   }
 
   // searchByTitle() {
-  //   this.movies$ = this.searchForm.valueChanges.pipe(
+  //   this.title$ = this.searchForm.valueChanges.pipe(
   //     debounceTime(500),
   //     distinctUntilChanged(),
-  //     switchMap((titleString) =>
-  //       this.movieService.getMovieByTitle(titleString)
+  //     switchMap(() =>
+  //       this.movieService.getMovieByTitle()
   //     ),
   //     map((res: any) => {
   //       this.movies$ = res
@@ -64,4 +62,36 @@ export class HomeMoviesComponent implements OnInit {
   clearForm() {
     this.searchForm.reset();
   }
+}
+
+export interface GetTitleParams {
+  /**
+   * Title of movie or series
+   */
+  t: string;
+
+  /**
+   * Year of release
+   */
+  y?: number;
+
+  /**
+   * Return movie or series
+   */
+  type?: 'movie' | 'series';
+
+  /**
+   * The response type to return
+   */
+  r?: 'json' | 'xml';
+
+  /**
+   * Return short or full plot
+   */
+  plot?: 'short' | 'full';
+
+  /**
+   * JSONP callback name
+   */
+  callback?: string;
 }
